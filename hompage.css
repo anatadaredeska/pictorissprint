@@ -333,6 +333,7 @@ nav li:first-child{
   line-height: 22px;
   margin :2%;
 }
+
 /*penutup*/
 .penutup{
   background-color: #1e1c1e;
@@ -371,10 +372,12 @@ nav li:first-child{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(255, 255, 255);
-  padding: 20px;
   font-family:"Catamaran", sans-serif;
   text-decoration-color: white;
-  
+  margin: 10px 50px;
+  display: flex;
+  gap: 3px;
+
   @media(max-width: 505px){
     font-size: small;
     text-align: center;
@@ -388,31 +391,8 @@ nav li:first-child{
 .hubunganluar a{
   align-items: baseline;
   display: block;
+  right: 50%;
   padding: 10px;
-}
-
-.nama{
-  align-items: baseline;
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  font-family:"Catamaran", sans-serif;
-  text-decoration-color: white;
-  transition: 0.5s all;
-  
-  @media(max-width: 505px){
-    font-size: small;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    padding: 20px;
-   font-family:"Catamaran", sans-serif;
-   text-decoration-color: white;
-   transition: 0.5s all;
-  }
 }
 
 .fa-square-instagram{
@@ -430,7 +410,7 @@ nav li:first-child{
   transition: 0.5s all;
 }
 .fa-envelope:hover {
-  color: #00ff84;
+  color: #ea00ff;
 }
 .fa-tiktok{
   size: 15px;
@@ -440,11 +420,15 @@ nav li:first-child{
 .fa-tiktok:hover {
   color: #0077ff;
 }
-
-.kiri{
-  display: flex;
-  right: 75%;
+.fa-threads{
+  size: 15px;
+  color: white;
+  transition: 0.5s all;
 }
+.fa-threads:hover {
+  color: #0077ff;
+}
+
 .link{
   display: flex;
   flex-direction: column;
@@ -488,20 +472,6 @@ nav li:first-child{
    bottom: 36px;
    font-size:large;
   }
-  .fa-square-instagram{
-  size: 15px;
-   color: white;
-   border-radius: 35px;
-  }
-  .fa-envelope{
-   size: 15px;
-   color: white;
-  }
-  .fa-tiktok{
-   size: 15px;
-   color: white;
-  }
-
   .links{
    margin: 25%;
    display: flex;
@@ -529,9 +499,9 @@ nav li:first-child{
    color: #303035;
  }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 377px) {
   .penutup{
-    background-color: #1e1c1e;
+    background-color: #000000;
     padding: 100px;
     display: flex;
     justify-content: space-between;
@@ -544,31 +514,24 @@ nav li:first-child{
     text-align: center;
     font-family:"Catamaran", sans-serif;
     position: relative;
-    right: -2%;
+    right: 38%;
     bottom: 50%;
     font-size:large;
     transition: 0.5s all;
-  
-    @media screen and (max-width: 715px) {
-     color: white;
-     text-align: center;
-     font-family:"Catamaran", sans-serif;
-     position: center;
-     right: 5%;
-     bottom: 36px;
-     font-size:large;
-     transition: 0.5s all;
-    }
   }
-  
+  .kataii p{
+    color: white;
+  }
   .hubunganluar{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    padding: 20px;
     font-family:"Catamaran", sans-serif;
     text-decoration-color: white;
-    
+    margin: 10px 0px;
+    display: flex;
+    gap: 3px;
+  
     @media(max-width: 505px){
       font-size: small;
       text-align: center;
@@ -582,86 +545,7 @@ nav li:first-child{
   .hubunganluar a{
     align-items: baseline;
     display: block;
+    right: 50%;
     padding: 10px;
-  }
-  
-  .nama{
-    align-items: baseline;
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    font-family:"Catamaran", sans-serif;
-    text-decoration-color: white;
-    transition: 0.5s all;
-    
-    @media(max-width: 505px){
-      font-size: small;
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      color: rgb(255, 255, 255);
-      padding: 20px;
-     font-family:"Catamaran", sans-serif;
-     text-decoration-color: white;
-     transition: 0.5s all;
-    }
-  }
-  
-  .fa-square-instagram{
-    size: 15px;
-    color: white;
-    border-radius: 35px;
-    transition: 0.5s all;
-  }
-  .fa-square-instagram:hover{
-    color: #ff0099;
-  }
-  .fa-envelope{
-    size: 15px;
-    color: white;
-    transition: 0.5s all;
-  }
-  .fa-envelope:hover {
-    color: #00ff84;
-  }
-  .fa-tiktok{
-    size: 15px;
-    color: white;
-    transition: 0.5s all;
-  }
-  .fa-tiktok:hover {
-    color: #0077ff;
-  }
-  
-  .kiri{
-    display: flex;
-    right: 75%;
-  }
-  .link{
-    display: flex;
-    flex-direction: column;
-    width: 90px;
-    margin: 35px 10px;
-    font-family:"Catamaran", sans-serif;
-  }
-  .links p {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    font-weight: 600;
-    color: #ffffff;
-    font-family:"Catamaran", sans-serif;
-  }
-  .links a {
-    font-size: 0.8rem;
-    text-decoration: none;
-    margin-bottom: 15px;
-    font-weight: 600;
-    color: #dbd8e3;
-    transition: 0.5s all;
-  }
-  .links a:hover {
-    color: #303035;
   }
 }
